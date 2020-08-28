@@ -1,0 +1,65 @@
+<!DOCTYPE html> <!-- Este es el tag necesario para identificar el tipo de HTML que estoy usando (HMTL 5) -->
+
+<html>
+<!--delimita el inicio de la página-->
+
+<head>
+    <!-- inicio del encabezado-->
+    <title>Ingresa tus datos</title>
+    <!--Titulo de la pagina-->
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+</head>
+<!--fin del encabezado-->
+
+<body>
+    <h2>Ingresa los datos</h2>
+    <form action="#" method="GET">
+        <label for="inputNombre"> Nombre:</label> <input type="text" name="inputNombre"
+            placeholder="Ingres nombre y apelllido" required />
+        <label for="inputNombre"> Edad: </label><input type="number" name="inputEdad" placeholder="Ingresa tu edad"
+            min="1" max="150" required />
+        <label for="inputNombre"> Fecha de Nacimiento: </label><input type="date" name="inputFecNac"
+            placeholder="Ingresa tu fecha de nacimiento" />
+        <label for="inputEmail"> Correo: </label><input type="email" name="inputEmail" placeholder="Ingresa Correo" />
+        <label for="inputClave"> Password: </label><input type="password" name="inputClave"
+            placeholder="Ingresa tu password" />
+        <label for="inputAvatar"> Avatar: </label><input type="file" name="inputAvatar" placeholder="Sube tu foto" />
+        <label for="inputOculto"> Campo oculto: </label><input type="hidden" name="inputOculto" value="input_oculto" />
+        <label for="inputSexo">Sexo</label>
+        <input type="radio" name="inputSexo" value="H" required> Hombre
+        <input type="radio" name="inputSexo" value="M"> Mujer
+        <input type="radio" name="inputSexo" value="O"> Otro <br>
+        Acepto TyC <input type="checkbox" name="inputTyC" value="si">
+        <label for="inputRegion">Selecciona Region</label>
+        <select name="inputRegion">
+            <option value="1">I Region</option>
+            <option value="2">II Region</option>
+            <option value="3">III Region</option>
+            <option value="4">IV Region</option>
+            <option value="5">V Region</option>
+            <option value="13" selected>RM Region</option>
+        </select>
+        <label for="inputMusica">Musica preferida</label>
+        <select name="inputMusica" multiple>
+            <option value="1">Rock</option>
+            <option value="2">Pop</option>
+            <option value="3">Metal</option>
+            <option value="4">Latino</option>
+            <option value="5">K-Pop</option>
+            <option value="6">Jazz</option>
+        </select>
+        <label for="inputComentarios">Deja tus comentarios</label>
+        <textarea name="inputComentarios" cols="35" rows="10" placeholder="danos tus buena onda"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Guardar Datos">
+        <input type="reset" value="Limpiar Formulario">
+
+    </form>
+</body>
+
+</html>

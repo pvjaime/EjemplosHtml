@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Tablas y mas </title>
+</head>
+
+<body>
+    <h3>Tablas de 3 columnas y 4 filas</h3>
+    <table border=1>
+        <caption> Tabla de participantes </caption>
+        <tr bgcolor="#00FF00">
+            <th> ID</th>
+            <th> Nombre</th>
+            <th> Pais</th>
+        </tr>
+        <tr>
+            <td> 1</td>
+            <td colspan="2"> Juanito</td>
+        </tr>
+        <tr>
+            <td rowspan="2"> 5</td>
+            <td> Margarita</td>
+            <td bgcolor="#F5FC0E"> Brasil</td>
+        </tr>
+        <tr bgcolor="#00FFFF">
+            <td> Doña Florindas</td>
+            <td> Mexico</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h3>Otra forma de declaracion</h3>
+    <table border="1">
+        <caption> Tabla de participantes </caption>
+        <thead>
+            <tr>
+                <td>Titulo 1</td>
+                <td>Titulo 2</td>
+            </tr>
+        </thead>
+        <tbody>
+            <td>fila 1</td>
+            <td>fila 2</td>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+
+    <table border=1 width="400">
+        <caption> Lista de productos </caption>
+        <tr bgcolor="#00FF00">
+            <th> Imagen</th>
+            <th> Nombre</th>
+            <th> Stock</th>
+            <th> Precio</th>
+        </tr>
+        <tr>
+            <td> <img src="imagenes/ryzen_3.jpg" width="150" alt="Procesador Ryzen 3"> </td>
+            <td> Ryzen 3</td>
+            <td> <i>45</i> </td>
+            <td> <b>$145.990</b> </td>
+        </tr>
+        <tr>
+            <td> <img src="imagenes/intel_i3.jpg" width="150" alt="Procesador Intel i3"> </td>
+            <td> Intel i3</td>
+            <td> <i>8</i> </td>
+            <td> <b>$189.990</b> </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
