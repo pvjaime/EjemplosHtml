@@ -1,0 +1,16 @@
+body {
+    background-color: aquamarine;
+    font-size: 24px;
+}
+
+p {
+    font-style: oblique;
+}
+
+.letras_grandes {
+    font-size: 35px;
+}
+
+#letras_rebeccapurple {
+    color: rebeccapurple;
+}
