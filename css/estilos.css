@@ -1,5 +1,5 @@
 body {
-    background-color: aquamarine;
+    background-color: gainsboro;
     font-size: 24px;
 }
 
@@ -7,10 +7,61 @@ p {
     font-style: oblique;
 }
 
-.letras_grandes {
-    font-size: 35px;
-}
-
 #letras_rebeccapurple {
     color: rebeccapurple;
+    font-size: 36px;
+}
+
+.letras_grandes {
+    font-size: 30px !important;
+}
+
+div {
+    color: blue;
+}
+
+div span{
+    color: red;
+}
+
+/*Aplicando estilo al tag label*/
+label {
+    display: block;
+}
+
+form{
+    font-size: 16px;
+}
+/*Estas son las Pseudoclases */
+a:link {
+    color: blue
+}
+a:visited {
+    color: red
+} 
+a:hover {
+    color: green;
+    font-size: 26px;
+ } 
+a:focus {
+    color: green
+} 
+a:active {
+    color: black
+}
+/*Vamos a aplicar una Pseudoclases a un boton usando una clase cuando el usuario pasa por encima*/
+.btn_agrandado:hover{
+    font-size: 22px;
+    color: green;
+    cursor: progress;
+}
+/*Vamos a aplicar una Pseudoclases a todos los inputs cuando tengan el foco*/
+input:focus {
+    border: red 5px solid;
+} 
+
+/*vamos a agregar a los inputs margenes para que se muestre mas espaciado*/
+input{
+    margin: 4px;
+    padding: 3px;
 }
